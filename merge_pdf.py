@@ -12,10 +12,11 @@ Created on Mon Aug 22 23:59:17 2022
 import os, sys
 from PIL import Image
 
-filepath = "/home/piyush/PRJ/PDF_MERGE/"
+filepath = "/home/piyush/PDF_MERGE/"
 
 img_fol = "img/"
 
+#change size of output file  
 size = 800, 1000
 
 for infile in os.listdir(filepath+img_fol) :
@@ -33,7 +34,7 @@ for infile in os.listdir(filepath+img_fol) :
 ###################convert img to pdf
 from fpdf import FPDF
 
-filepath = "/home/piyush/PRJ/PDF_MERGE/"
+filepath = "/home/piyush/PDF_MERGE/"
 
 img_fol = "img/"
 
@@ -63,7 +64,7 @@ dt.sort()
 for i in dt:    
     x=0
     y=0
-    w=210
+    w=210   #For A4 size page 
     h=297
     l = filepath+img_fol+str(i)
     #c = l.split('.')
